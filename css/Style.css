@@ -1,0 +1,172 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background-color: #fff;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+header section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background-color: #222;
+}
+
+.logo-main {
+  max-width: 150px;
+  margin-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+nav a {
+  color: white;
+  padding: 0.5rem;
+  background-color: #c78c06; /*This is to change the background colour */
+  border-radius: 4px;
+}
+
+form {
+  margin-top: 1rem;
+  display: flex;
+}
+
+form input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background-color: #c78c06;
+  border: none;
+  width: 2rem;
+}
+
+.main {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #ffe6ac;
+}
+
+.main a {
+  display: inline-block;
+  background-color: #c78c06;
+  color: white;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+}
+
+.about-us {
+  padding: 2rem 1rem;
+}
+
+.our-services {
+  padding: 2rem 1rem;
+  background-color: #222;
+  color: white;
+}
+
+.our-services > div {
+  margin-bottom: 2rem;
+}
+
+.our-services a {
+  display: inline-block;
+  background-color: #c78c06;
+  color: white;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+}
+
+.vision {
+  background-color: #ffe6ac;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.our-team {
+  padding: 2rem 1rem;
+}
+
+.our-team img {
+  margin-bottom: 1rem;
+}
+
+.contact-us {
+  padding: 2rem 1rem;
+}
+
+.contact-us form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-us input,
+.contact-us textarea {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+@media (min-width: 760px) {
+
+  header section {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .our-services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .our-team > div {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .contact-us {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
